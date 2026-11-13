@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta viewport agar web-nya responsif (bagus dilihat di HP maupun Laptop) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Ketahanan Pangan</title>
+    
+    <!-- CSS: Bagian untuk mempercantik tampilan website -->
+    <style>
+        /* Mengatur font dan warna dasar seluruh halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FDFBF7; /* Warna Krem yang hangat dan modern */
+            color: #2D3748; /* Warna teks abu-abu gelap agar nyaman dibaca */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Container utama di tengah layar */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Bagian Header / Judul Utama */
+        header {
+            text-align: center;
+            background-color: #2D6A4F; /* Warna Hijau Tua yang elegan */
+            color: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #D8F3DC; /* Warna hijau muda terang */
+        }
+
+        /* Bagian Kartu Tips (Grid otomatis menyesuaikan layar HP / Laptop) */
+        .tips-section {
+            margin-bottom: 30px;
+        }
+
+        .tips-section h2 {
+            color: #2D6A4F;
+            border-bottom: 2px solid #D8F3DC;
+            padding-bottom: 8px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Default 1 kolom untuk HP */
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        /* Jika layar lebar (Laptop/Tablet), ubah jadi 3 kolom */
+        @media (min-width: 600px) {
+            .card-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Desain Kotak Tips */
+        .card {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-top: 4px solid #52B788; /* Aksen hijau cerah */
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1B4332;
+        }
+
+        /* Bagian Interaktif: Tombol Fakta Unik */
+        .interactive-section {
+            background-color: #D8F3DC; /* Hijau muda lembut */
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #B7E4C7;
+        }
+
+        .interactive-section h2 {
+            color: #1B4332;
+            margin-top: 0;
+        }
+
+        /* Kotak tempat munculnya teks fakta/tips interaktif */
+        #fact-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        /* Desain Tombol */
+        button {
+            background-color: #2D6A4F;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #1B4332; /* Warna sedikit lebih gelap saat mouse di atasnya */
+        }
+
+        /* Bagian Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #6C757D;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER / JUDUL & PENJELASAN -->
+        <header>
+            <h1>Ketahanan Pangan Generasi Muda</h1>
+            <p>Mengenal pentingnya ketersediaan, keterjangkauan, dan pemanfaatan pangan yang berkelanjutan untuk masa depan Indonesia.</p>
+        </header>
+
+        <!-- KONTEN UTAMA: PENJELASAN SINGKAT -->
+        <section style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h2 style="color: #2D6A4F; margin-top: 0;">Apa itu Ketahanan Pangan?</h2>
+            <p>Ketahanan pangan bukan sekadar ketersediaan makanan di pasar, tetapi juga memastikan bahwa setiap orang memiliki akses fisik maupun ekonomi untuk mendapatkan makanan yang bergizi, aman, dan cukup setiap hari guna menjalani hidup yang sehat dan produktif.</p>
+        </section>
+
+        <!-- 3 TIPS MENJAGA KETAHANAN PANGAN -->
+        <section class="tips-section">
+            <h2>3 Tips Sederhana Menjaga Ketahanan Pangan</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>1. Kurangi Sisa Makanan (Food Waste)</h3>
+                    <p>Ambil makanan secukupnya saja di piring. Membuang makanan sama dengan membuang sumber daya air, energi, dan tenaga petani.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Manfaatkan Lahan Pekarangan</h3>
+                    <p>Tanam sayuran mandiri di rumah menggunakan pot atau hidroponik sederhana seperti cabai, kangkung, atau tomat.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Konsumsi Pangan Lokal</h3>
+                    <p>Dukung petani lokal dengan mengonsumsi komoditas asli daerah seperti ubi, singkong, atau jagung sebagai alternatif pengganti beras.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN INTERAKTIF: TOMBOL "TAHUKAH KAMU?" -->
+        <section class="interactive-section">
+            <h2>Tahukah Kamu?</h2>
+            <p>Klik tombol di bawah ini untuk melihat fakta unik seputar pangan!</p>
+            
+            <!-- Tempat teks akan berubah-ubah lewat JavaScript -->
+            <div id="fact-box">
+                Tekan tombol "Tahukah Kamu?" untuk mulai melihat fakta menarik!
+            </div>
+            
+            <button onclick="tampilkanFaktaAcak()">Tahukah Kamu?</button>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Workshop Web Development Kelas 12 &copy; 2026</p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT: Logika Interaktif Website -->
+    <script>
+        // Siapkan daftar fakta atau tips unik dalam bentuk array (kumpulan data)
+        const daftarFakta = [
+            "Sepertiga dari seluruh makanan yang diproduksi di dunia untuk konsumsi manusia terbuang sia-sia setiap tahunnya!",
+            "Indonesia memiliki keanekaragaman pangan lokal yang sangat tinggi, termasuk lebih dari 70 jenis umbi-umbian.",
+            "Menanam cabai sendiri di pekarangan rumah bisa menghemat pengeluaran dapur sekaligus menjaga ketersediaan pangan keluarga.",
+            "Jejak air (water footprint) untuk memproduksi 1 kilogram daging sapi jauh lebih besar daripada 1 kilogram gandum atau sayuran.",
+            "Membeli produk dari petani lokal memperpendek rantai pasok dan membuat harga pangan lebih stabil bagi kedua belah pihak."
+        ];
+
+        // Fungsi yang akan dijalankan setiap kali tombol diklik
+        function tampilkanFaktaAcak() {
+            // Memilih angka acak dari 0 sampai jumlah total fakta yang ada
+            const indexAcak = Math.floor(Math.random() * daftarFakta.length);
+            
+            // Mengambil elemen kotak fakta berdasarkan ID-nya
+            const kotakFakta = document.getElementById("fact-box");
+            
+            // Mengubah teks di dalam kotak fakta dengan teks yang terpilih secara acak
+            kotakFakta.innerText = daftarFakta[indexAcak];
+        }
+    </script>
+
+</body>
+</html>
